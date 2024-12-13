@@ -1,0 +1,63 @@
+/* Background image added */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('../img/backround.jpg'); /* Replace this with your image link */
+    background-size: cover;  /* Image adjusts to screen size */
+    background-position: center; /* Image is centered */
+    background-attachment: fixed; /* Image remains fixed while scrolling */
+    padding: 20px;
+    color: white; /* White text for better readability */
+}
+
+.section {
+    margin: 40px 0;
+}
+.group, .wizard {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(102, 102, 102, 0.651); /* Light background with transparency */
+    border: 2px solid #0a0a0ad3;
+    border-radius: 8px;
+}
+.group h2, .wizard h2, .section h1 {
+    margin-bottom: 10px;
+}
+.counter {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+}
+.life-value {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+}
+button:hover {
+    background-color: #0056b3;
+}
+/* Specific background colors for Life Points and Spell Levels */
+.life-counter {
+    background-color: #af2a28e3; /* Light red for life points */
+}
+.spell-counter {
+    background-color: #8e4b97dc; /* Light blue for spell levels */
+}

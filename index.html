@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Life Counter for Wizards & Monster Groups</title>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+            .then(registration => console.log('Service Worker registered with scope:', registration.scope))
+            .catch(error => console.error('Service Worker registration failed:', error));
+        }
+        </script>
+</head>
+<body>
+
+<h1>Life Counter for Wizards & Monster Groups</h1>
+
+<div id="wizardsContainer" class="section">
+    <h1>Wizards</h1>
+</div>
+
+<div id="groupsContainer" class="section">
+    <h1>Monster Groups</h1>
+</div>
+
+<script src="script/script.js"></script>
+
+</body>
+</html>
